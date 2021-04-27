@@ -1,0 +1,94 @@
+---
+title: "analiza"
+author: "Jakub Andrzejewski"
+date: "23 04 2020"
+output: pdf_document
+---
+
+
+
+```{r pressure, echo=FALSE}
+library(odbc)
+library(DBI)
+
+con <- DBI::dbConnect(odbc::odbc(),
+                      driver = "SQL Server",
+                      database = "dbad_flights",
+                      server = "mssql-2017.labs.wmi.amu.edu.pl",
+                      encoding = "cp1250",
+                      Trusted_Connection = "True")
+plot(pressure)
+```
+
+```{sql, connection=con, output.var = "wynik1"}
+Select AVG(arr_delay_new) AS 'avg_delay'
+FROM [dbad_flights].[dbo].[Flight_delays];
+```
+```{r, echo=FALSE}
+zad1 <- DBI::dbGetQuery(con, 
+                          "Select AVG(arr_delay_new) AS 'avg_delay'
+FROM [dbad_flights].[dbo].[Flight_delays]");
+zad1
+```
+
+```{sql, connection=con, output.var = "wynik2"}
+Select MAX(arr_delay_new) AS 'max_delay'
+  FROM [dbad_flights].[dbo].[Flight_delays];
+```
+```{r, echo=FALSE}
+zad2 <- DBI::dbGetQuery(con, 
+                          "Select MAX(arr_delay_new) AS 'max_delay'
+  FROM [dbad_flights].[dbo].[Flight_delays];
+");
+zad2
+```
+
+
+```{sql, connection=con, output.var = "wynik9"}
+Select A.airline_name
+ FROM [dbad_flights].[dbo].[Flight_delays] F
+ INNER JOIN [dbad_flights].[dbo].[Airlines] A ON F.airline_id = A.airline_id
+ Where origin = 'SFO' and dest ='PDX'
+
+ INTERSECT
+
+ Select A.airline_name
+ FROM [dbad_flights].[dbo].[Flight_delays] F
+ INNER JOIN [dbad_flights].[dbo].[Airlines] A ON F.airline_id = A.airline_id
+ Where origin = 'SFO' and dest ='EUG'
+```
+```{r, echo=FALSE}
+zad9 <- DBI::dbGetQuery(con, 
+                          "Select A.airline_name
+ FROM [dbad_flights].[dbo].[Flight_delays] F
+ INNER JOIN [dbad_flights].[dbo].[Airlines] A ON F.airline_id = A.airline_id
+ Where origin = 'SFO' and dest ='PDX'
+
+ INTERSECT
+
+ Select A.airline_name
+ FROM [dbad_flights].[dbo].[Flight_delays] F
+ INNER JOIN [dbad_flights].[dbo].[Airlines] A ON F.airline_id = A.airline_id
+ Where origin = 'SFO' and dest ='EUG'
+");
+zad9
+```
+
+```{r, echo=FALSE}
+zad6 <- DBI::dbGetQuery(con, 
+                          "WITH CTE_Test(id)
+AS
+(
+    Select distinct airline_id
+    FROM [dbad_flights].[dbo].[Flight_delays] 
+    Group by airline_id
+    HAVING avg(Arr_delay_new)>10
+)
+ Select cast(count(*)As real)/(Select Count(distinct airline_id) FROM [dbad_flights].[dbo].[Flight_delays]) AS 'late_proportion' 
+ From CTE_Test");
+zad6
+
+```
+
+
+
