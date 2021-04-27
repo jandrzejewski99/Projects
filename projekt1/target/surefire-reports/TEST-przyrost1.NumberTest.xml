@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="0" name="przyrost1.NumberTest" time="0.02" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2020.2.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.9+11"/>
+    <property name="sun.boot.library.path" value="C:\software\jdk\bin"/>
+    <property name="user.country.format" value="PL"/>
+    <property name="maven.multiModuleProjectDirectory" value="J:\IdeaProjects\projekt1"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="J:\IdeaProjects\projekt1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.9+11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\s452700\AppData\Local\Temp\205\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows Server 2019"/>
+    <property name="maven.ext.class.path" value="C:\software\intellij_idea\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\software\intellij_idea\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.library.path" value="C:\software\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\software\python3\Scripts;c:\software\python3;c:\software\openssl\bin;c:\windows\bin\sysinternals;c:\windows\bin;c:\software\putty;c:\software\ruby\bin;C:\Program Files\7-Zip;C:\Program Files\Haskell\bin;c:\software\haskell\lib\extralibs\bin;c:\software\haskell\bin;c:\software\tdm_gcc\bin;c:\software\julia\bin;c:\software\gnuplot\bin;c:\software\imagemagick;c:\software\gs\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;c:\software\jdk\bin;c:\software\jre\bin;c:\software\jdk32\bin;C:\software\latex\bin\win32;C:\software\scala\bin;C:\Program Files (x86)\google\chrome\application;c:\software\thunderbird;c:\software\gsview\gsview;c:\software\rabbitmq\sbin;c:\software\cmake\bin;c:\software\ant\bin;c:\software\maven\bin;c:\software\gradle\bin;c:\software\orca;c:\software\emacs\bin;c:\software\gp;c:\software\fpc\bin\i386-Win32;c:\software\gpg\..\GnuPG\bin;c:\software\gpg;C:\Program Files\dotnet\;c:\software\vim;c:\software\llvm\bin;c:\software\qt\5.12.1\mingw73_64\bin;c:\software\opencv\x86\vc14\bin;c:\software\opencv\x86\vc15\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Calibre2\;C:\Program Files\TortoiseGit\bin;C:\software\hg\;c:\software\hg\lib;c:\software\firefox;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\software\brackets\command;c:\software\adobe\reader\reader;%DDCPATH64%;c:\software\python;c:\software\php;C:\software\nodejs\;c:\software\notepad++;c:\software\git\cmd;C:\Users\Administrator\AppData\Roaming\cabal\bin;C:\Users\Administrator\AppData\Roaming\local\bin;C:\Users\Administrator\AppData\Roaming\npm;c:\software\fiddler;."/>
+    <property name="maven.conf" value="C:\software\intellij_idea\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="J:\"/>
+    <property name="user.timezone" value="Europe/Belgrade"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="s452700"/>
+    <property name="java.class.path" value="C:\software\intellij_idea\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\software\intellij_idea\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.2.1 test"/>
+    <property name="java.home" value="C:\software\jdk"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="pl"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.9"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\software\intellij_idea\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="przyrost1.NumberTest" name="Correctfalse" time="0.02"/>
+  <testcase classname="przyrost1.NumberTest" name="Correcttreue" time="0"/>
+  <testcase classname="przyrost1.NumberTest" name="calculate" time="0"/>
+</testsuite>
